@@ -59,15 +59,15 @@ class MyHandler(FileSystemEventHandler):
                 os.rename(src,new_destination)
 
 
-folder_Main = "C:\\Users\\dedsec995\\Downloads\\Download"
-folder_Text = "C:\\Users\\dedsec995\\Downloads\\Text"
-folder_PDF = "C:\\Users\\dedsec995\\Downloads\\PDF"
-folder_Setups = "C:\\Users\\dedsec995\\Downloads\\Setups"
-folder_Archive = "C:\\Users\\dedsec995\\Downloads\\Archive"
-folder_Docs = "C:\\Users\\dedsec995\\Downloads\\Docs"
-folder_Images = "C:\\Users\\dedsec995\\Downloads\\Images"
-folder_Videos = "C:\\Users\\dedsec995\\Downloads\\Videos"
-folder_Others = "C:\\Users\\dedsec995\\Downloads\\Others"
+folder_Main = "" # Main Folder where the files will be downloaded
+folder_Text = "" # Text Folder
+folder_PDF = "" # PDF Folder
+folder_Setups = "" # Setups Folder
+folder_Archive = "" # Archives Folder
+folder_Docs = "" # Docs Fodler
+folder_Images = "" # Images Folder
+folder_Videos = "" # Videos Folder
+folder_Others = "" # Other
 event_handler = MyHandler()
 observer = Observer()
 observer.schedule(event_handler,folder_Main, recursive=True)
